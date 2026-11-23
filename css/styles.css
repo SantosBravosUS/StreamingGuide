@@ -1128,3 +1128,54 @@ footer .disclaimer {
         gap: 14px;
     }
 }
+
+/* LANGUAGE SELECTOR */
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 5%;
+    background: #111820;
+    border-bottom: 1px solid #40515d;
+    min-height: 42px;
+}
+
+#google_translate_element {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#google_translate_element select {
+    background: #202f3b;
+    color: #e9e7df;
+    border: 1px solid #78b9d4;
+    padding: 7px 10px;
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+#google_translate_element .goog-te-gadget {
+    color: #aab5bd;
+    font-size: 0;
+}
+
+#google_translate_element .goog-te-gadget span,
+#google_translate_element .goog-logo-link {
+    display: none;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+@media (max-width: 600px) {
+    .language-selector {
+        justify-content: center;
+    }
+}
