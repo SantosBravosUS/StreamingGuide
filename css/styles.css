@@ -1179,3 +1179,19 @@ body {
         justify-content: center;
     }
 }
+
+/* Compact Spotify player when collapsed on mobile */
+@media (max-width: 600px) {
+  .spotify-floating-player {
+    transition: width .25s ease, transform .8s ease-in-out, opacity .8s ease-in-out;
+  }
+
+  .spotify-floating-player.is-collapsed {
+    width: 210px;
+  }
+
+  .spotify-floating-player.is-collapsed iframe {
+    height: 0;
+    opacity: 0;
+  }
+}
